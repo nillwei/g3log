@@ -87,10 +87,10 @@ namespace g3 {
 
       std::string createLogFileName(const std::string &verified_prefix, const std::string &logger_id) {
          std::stringstream oss_name;
-         oss_name << verified_prefix << ".";
-         if( logger_id != "" ) oss_name << logger_id << ".";
+         oss_name << verified_prefix << ".log";
+         //if( logger_id != "" ) oss_name << logger_id << ".";
          //oss_name << g3::localtime_formatted(g3::systemtime_now(), file_name_time_formatted);
-         oss_name << ".log";
+         //oss_name << ".log";
          return oss_name.str();
       }
 
